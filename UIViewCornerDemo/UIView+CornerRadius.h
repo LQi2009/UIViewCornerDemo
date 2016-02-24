@@ -18,11 +18,17 @@
 
 #import <UIKit/UIKit.h>
 typedef NS_ENUM(NSInteger,LQQSideType) {
-    kLQQSideTypeTop    = 0,
-    kLQQSideTypeLeft   = 1,
-    kLQQSideTypeBottom = 2,
-    kLQQSideTypeRight  = 3,
-    kLQQSideTypeAll    = 4,
+    kLQQSideTypeTopLine    = 0,
+    kLQQSideTypeLeftLine   = 1,
+    kLQQSideTypeBottomLine = 2,
+    kLQQSideTypeRightLine  = 3,
+    
+    kLQQSideTypeTopRightCorner  = 4,
+    kLQQSideTypeTopLeftCorner  = 5,
+    kLQQSideTypeBottomRightCorner  = 6,
+    kLQQSideTypeBottomLeftCorner  = 7,
+    
+    kLQQSideTypeAll    = 8,
 };
 
 @interface UIView (CornerRadius)

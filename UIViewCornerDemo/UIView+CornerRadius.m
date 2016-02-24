@@ -17,34 +17,67 @@
     UIBezierPath *maskPath;
     
     switch (sideType) {
-        case kLQQSideTypeTop:
+        case kLQQSideTypeTopLine:
         {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerTopRight)
                                                    cornerRadii:cornerSize];
         }
             break;
-        case kLQQSideTypeLeft:
+        case kLQQSideTypeLeftLine:
         {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerBottomLeft)
                                                    cornerRadii:cornerSize];
         }
             break;
-        case kLQQSideTypeBottom:
+        case kLQQSideTypeBottomLine:
         {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:(UIRectCornerBottomLeft|UIRectCornerBottomRight)
                                                    cornerRadii:cornerSize];
         }
             break;
-        case kLQQSideTypeRight:
+        case kLQQSideTypeRightLine:
         {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:(UIRectCornerTopRight|UIRectCornerBottomRight)
                                                    cornerRadii:cornerSize];
         }
             break;
+            
+        case kLQQSideTypeTopLeftCorner:
+        {
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:UIRectCornerTopLeft
+                                                   cornerRadii:cornerSize];
+        }
+            break;
+            
+        case kLQQSideTypeTopRightCorner:
+        {
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:UIRectCornerTopRight
+                                                   cornerRadii:cornerSize];
+        }
+            break;
+
+        case kLQQSideTypeBottomLeftCorner:
+        {
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:UIRectCornerBottomLeft
+                                                   cornerRadii:cornerSize];
+        }
+            break;
+
+        case kLQQSideTypeBottomRightCorner:
+        {
+            maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                             byRoundingCorners:UIRectCornerBottomRight
+                                                   cornerRadii:cornerSize];
+        }
+            break;
+            
         default:
         {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
