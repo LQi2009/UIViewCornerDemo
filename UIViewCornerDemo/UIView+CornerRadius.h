@@ -41,5 +41,5 @@ typedef NS_ENUM(NSInteger,LQQSideType) {
  *  @param sideType 圆角类型
  *  @param cornerRadius 圆角半径
  */
-- (void)cornerSideType:(LQQSideType)sideType withCornerRadius:(CGFloat)cornerRadius;
+- (void)LQQSetCornerWithSideType:(LQQSideType)sideType cornerRadius:(CGFloat)cornerRadius;
 @end

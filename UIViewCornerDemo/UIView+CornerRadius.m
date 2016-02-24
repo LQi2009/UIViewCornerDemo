@@ -10,81 +10,75 @@
 
 @implementation UIView (CornerRadius)
 
-- (void)cornerSideType:(LQQSideType)sideType withCornerRadius:(CGFloat)cornerRadius
+- (void)LQQSetCornerWithSideType:(LQQSideType)sideType cornerRadius:(CGFloat)cornerRadius
 {
     
-    CGSize cornerSize = CGSizeMake(cornerRadius, cornerRadius);
+    CGSize cornerSize = CGSizeMake(cornerRadius,cornerRadius);
     UIBezierPath *maskPath;
     
     switch (sideType) {
-        case kLQQSideTypeTopLine:
-        {
+        case kLQQSideTypeTopLine: {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerTopRight)
                                                    cornerRadii:cornerSize];
-        }
             break;
-        case kLQQSideTypeLeftLine:
-        {
+        }
+            
+        case kLQQSideTypeLeftLine: {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerBottomLeft)
                                                    cornerRadii:cornerSize];
-        }
             break;
-        case kLQQSideTypeBottomLine:
-        {
+        }
+            
+        case kLQQSideTypeBottomLine: {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:(UIRectCornerBottomLeft|UIRectCornerBottomRight)
                                                    cornerRadii:cornerSize];
-        }
             break;
-        case kLQQSideTypeRightLine:
-        {
+        }
+            
+        case kLQQSideTypeRightLine: {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:(UIRectCornerTopRight|UIRectCornerBottomRight)
                                                    cornerRadii:cornerSize];
-        }
             break;
+        }
             
-        case kLQQSideTypeTopLeftCorner:
-        {
+        case kLQQSideTypeTopLeftCorner: {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:UIRectCornerTopLeft
                                                    cornerRadii:cornerSize];
-        }
             break;
+        }
             
-        case kLQQSideTypeTopRightCorner:
-        {
+        case kLQQSideTypeTopRightCorner: {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:UIRectCornerTopRight
                                                    cornerRadii:cornerSize];
-        }
             break;
-
-        case kLQQSideTypeBottomLeftCorner:
-        {
+        }
+            
+        case kLQQSideTypeBottomLeftCorner: {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:UIRectCornerBottomLeft
                                                    cornerRadii:cornerSize];
-        }
             break;
-
-        case kLQQSideTypeBottomRightCorner:
-        {
+        }
+            
+        case kLQQSideTypeBottomRightCorner: {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:UIRectCornerBottomRight
                                                    cornerRadii:cornerSize];
-        }
             break;
+        }
             
-        default:
-        {
+        default: {
             maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                              byRoundingCorners:UIRectCornerAllCorners
-                                                cornerRadii:cornerSize];
-        }
+                                                   cornerRadii:cornerSize];
             break;
+        }
     }
     
     // Create the shape layer and set its path
@@ -94,7 +88,6 @@
     
     // Set the newly created shape layer as the mask for the image view's layer
     self.layer.mask = maskLayer;
-    
     [self.layer setMasksToBounds:YES];
 }
 
