@@ -16,6 +16,7 @@
 		912C9FA41C78B5A30035EF0E /* UIViewCornerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 912C9FA31C78B5A30035EF0E /* UIViewCornerDemoTests.m */; };
 		912C9FAF1C78B5A30035EF0E /* UIViewCornerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 912C9FAE1C78B5A30035EF0E /* UIViewCornerDemoUITests.m */; };
 		912C9FBE1C78B5C80035EF0E /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 912C9FBD1C78B5C80035EF0E /* UIView+CornerRadius.m */; };
+		9148A7C91C882C85000B2572 /* 6e7fea1124664e7cb8171c67f65617b7.cut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9148A7C81C882C85000B2572 /* 6e7fea1124664e7cb8171c67f65617b7.cut.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		912C9FB01C78B5A30035EF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		912C9FBC1C78B5C80035EF0E /* UIView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
 		912C9FBD1C78B5C80035EF0E /* UIView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
+		9148A7C81C882C85000B2572 /* 6e7fea1124664e7cb8171c67f65617b7.cut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6e7fea1124664e7cb8171c67f65617b7.cut.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				912C9F8F1C78B5A30035EF0E /* ViewController.h */,
 				912C9F901C78B5A30035EF0E /* ViewController.m */,
 				912C9F921C78B5A30035EF0E /* Main.storyboard */,
+				9148A7C81C882C85000B2572 /* 6e7fea1124664e7cb8171c67f65617b7.cut.jpg */,
 				912C9F951C78B5A30035EF0E /* Assets.xcassets */,
 				912C9F971C78B5A30035EF0E /* LaunchScreen.storyboard */,
 				912C9F9A1C78B5A30035EF0E /* Info.plist */,
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				912C9F991C78B5A30035EF0E /* LaunchScreen.storyboard in Resources */,
+				9148A7C91C882C85000B2572 /* 6e7fea1124664e7cb8171c67f65617b7.cut.jpg in Resources */,
 				912C9F961C78B5A30035EF0E /* Assets.xcassets in Resources */,
 				912C9F941C78B5A30035EF0E /* Main.storyboard in Resources */,
 			);
@@ -504,6 +508,7 @@
 				912C9FB51C78B5A30035EF0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		912C9FB61C78B5A30035EF0E /* Build configuration list for PBXNativeTarget "UIViewCornerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +517,7 @@
 				912C9FB81C78B5A30035EF0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		912C9FB91C78B5A30035EF0E /* Build configuration list for PBXNativeTarget "UIViewCornerDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +526,7 @@
 				912C9FBB1C78B5A30035EF0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

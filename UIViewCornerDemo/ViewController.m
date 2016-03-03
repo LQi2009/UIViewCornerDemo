@@ -77,6 +77,12 @@
                              cornerRadius:50.f];
 
 
+    UIImageView *image = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"6e7fea1124664e7cb8171c67f65617b7.cut.jpg"]];
+    image.frame = CGRectMake(100, 500, 100, 100);
+    [image LQQSetCornerWithSideType:kLQQSideTypeAll cornerRadius:50];
+    
+    [self.view addSubview:image];
+    
 }
 
 - (void)didReceiveMemoryWarning {
